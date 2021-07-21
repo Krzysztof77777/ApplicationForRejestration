@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="data:,">
+    <link href="https://fonts.googleapis.com/css2?family=BenchNine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/day.min.css">
+</head>
+
+<body>
+    <div class="menu__hamburger">
+        <i class="fas fa-bars menu__show extendedicon"></i>
+        <i class="fas fa-times menu__exit notextendedicon"></i>
+    </div>
+    <section class="menu">
+        <div class="menu__border"></div>
+        <div class="menu__container">
+            <div class="menu__panel"></div>
+            <div class="menu__date">
+                <p class="date"></p>
+                <p class="hour"></p>
+            </div>
+            <div class="menu__login">
+                <p>Zalogowany jako: <var class="whoislogined"></var></p>
+                <p><a class="logout">Wyloguj</a><a class="changepassword">Zmien hasło</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="main__title">
+            <a class="fas fa-long-arrow-alt-left"></a>
+            <div>
+                <p>Przeglądasz terminy na:</p><span class="data"></span>
+            </div>
+            <a class="fas fa-long-arrow-alt-right"></a>
+        </div>
+        <div class="main__content">
+        </div>
+        <section class="freeterms">
+            <div class="freeterms--container">
+                <div class="freeterms--border">
+                    <div class="freeterms__leftside">
+                        <div class="freeterms__loader">
+                            <i class="fas fa-spinner"></i>
+                        </div>
+                        <div class="freeterms__title">
+                            <p>Pracownik</p>
+                            <p>Trzy najbliższe wolne terminy</p>
+                        </div>
+                        <div class="freeterms__workers">
+
+                        </div>
+                    </div>
+                    <div class="freeterms__rightside">
+                        <p>W<br>o<br>l<br>n<br>e<br><br> t<br>e<br>r<br>m<br>i<br>n<br>y<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clientlist">
+            <div class="clientlist--container">
+                <div class="clientlist--border">
+                    <div class="clientlist__title">
+                        <p>
+                            B<br>a<br>z<br>a<br><br> k<br>l<br>i<br>e<br>n<br>t<br>ó<br>w
+                        </p>
+                    </div>
+                    <div class="clientlist__right">
+                        <div class="clientlist__label">
+                            <label for="ice-cream-choice">
+                                <p>Wyszukiwarka: </p><input type="text" />
+                                <i class="fas fa-user-plus addnewclient"></i>
+                            </label>
+                        </div>
+                        <nav class="clientlist__main">
+                            <div class="clientlist__loader hidden">
+                                <i class="fas fa-spinner"></i>
+                            </div>
+                            <ul>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="modal__background hidden">
+        <div class="modal__loader hidden">
+            <i class="fas fa-spinner"></i>
+        </div>
+        <div class="modal__change"></div>
+        <div class="modal__client hidden">
+            <div class="modal__client--container">
+                <label>
+                    <p>Imie</p><input type="text" class="clientname">
+                </label>
+                <label>
+                    <p>Numer telefonu</p><input type="text" class="clientcontact">
+                </label>
+                <p class="modalclientinfo"></p>
+                <input class="sendclientinfo" type="submit" value="Edytuj dane">
+                <div class="exit">
+                    <i class="fas fa-times modal__exit"></i>
+                </div>
+            </div>
+        </div>
+        <div class="modal__visit hidden">
+            <div class="modal__visit--container">
+                <section class="modal__visit__hours">
+                    <div class="modal__visit__from">
+                        <p>Od godziny:</p>
+                        <div class="modal__visit__from--container">
+                            <div>
+                                <input type="radio" name="to" id="to" value="07:00">
+                                <label for="to">07:30</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="to" id="to" value="07:00">
+                                <label for="to">07:30</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="to" id="to" value="07:00">
+                                <label for="to">07:30</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="to" id="to" value="07:00">
+                                <label for="to">07:30</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="to" id="to" value="07:00">
+                                <label for="to">07:30</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="to" id="to" value="07:00">
+                                <label for="to">07:30</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="to" id="to" value="07:00">
+                                <label for="to">07:30</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__visit__to">
+                        <p>Do godziny:</p>
+                        <div class="modal__visit__to--container">
+                            <div>
+                                <input type="radio" name="to" id="to" value="07:00">
+                                <label for="to">07:30</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="to" id="to" value="07:00">
+                                <label for="to">07:30</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <input class="sendedit" type="submit" value="Zapisz zmiane">
+                <div class="exit">
+                    <i class="fas fa-times modal__exit"></i>
+                </div>
+            </div>
+        </div>
+        <div class="modal__main hidden">
+            <div class="modal__main--container">
+                <label>
+                    <p>Imie</p><input type="text" class="name">
+                </label>
+                <label>
+                    <p>Numer telefonu</p><input type="search" list="browsers" name="" class="number">
+                </label>
+                <datalist id="browsers">
+                </datalist>
+                <section class="modal__main__hours">
+                    <div class="modal__main__from">
+                        <p>Od godziny:</p>
+                        <div class="modal__main__from--container">
+                            <div>
+                                <input type="radio" name="to" id="to" value="07:00">
+                                <label for="to">07:30</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="to" id="to" value="07:00">
+                                <label for="to">07:30</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__main__to">
+                        <p>Do godziny:</p>
+                        <div class="modal__main__to--container">
+                            <div>
+                                <input type="radio" name="to" id="to" value="07:00">
+                                <label for="to">07:30</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="to" id="to" value="07:00">
+                                <label for="to">07:30</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="to" id="to" value="07:00">
+                                <label for="to">07:30</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="to" id="to" value="07:00">
+                                <label for="to">07:30</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="to" id="to" value="07:00">
+                                <label for="to">07:30</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="to" id="to" value="07:00">
+                                <label for="to">07:30</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="to" id="to" value="07:00">
+                                <label for="to">07:30</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="to" id="to" value="07:00">
+                                <label for="to">07:30</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <input class="send" type="submit" value="Dodaj wizyte">
+                <div class="exit">
+                    <i class="fas fa-times modal__exit"></i>
+                </div>
+            </div>
+        </div>
+        <div class="modal__acceptforclientlist hidden">
+            <div class="modal__acceptforclientlist--container">
+                <p>Czy na pewno chcesz dodać klienta do bazy danych?</p>
+                <div><span class="modalyesclientlist">Tak</span><span class="modalno">Nie</span></div>
+            </div>
+        </div>
+        <div class="modal__acceptforvisit hidden">
+            <div class="modal__acceptforvisit--container">
+                <p>Czy na pewno chcesz dodać klienta do bazy danych?</p>
+                <div><span class="modalyesvisit">Tak</span><span class="modalno">Nie</span></div>
+            </div>
+        </div>
+        <div class="modal__info hidden">
+            <div class="modal__info--container">
+                <p>Dodałeś klienta do bazy danych</p>
+            </div>
+        </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascript/day.js" type="module"></script>
+</body>
+
+</html>

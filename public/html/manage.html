@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="data:,">
+    <link href="https://fonts.googleapis.com/css2?family=BenchNine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/manage.min.css">
+</head>
+
+<body>
+    <div class="menu__hamburger">
+        <i class="fas fa-bars menu__show extendedicon"></i>
+        <i class="fas fa-times menu__exit notextendedicon"></i>
+    </div>
+    <section class="menu">
+        <div class="menu__border"></div>
+        <div class="menu__container">
+            <div class="menu__panel">
+            </div>
+            <div class="menu__date">
+                <p class="date"></p>
+                <p class="hour"></p>
+            </div>
+            <div class="menu__login">
+                <p>Zalogowany jako: <var class="whoislogined"></var></p>
+                <p><a class="logout">Wyloguj</a><a class="changepassword">Zmien hasło</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="manage">
+        <div class="container">
+            <div class="manage__container">
+                <div class="manage__title">
+                    <p>Panel administracyjny</p>
+                </div>
+                <div class="manage__main main">
+                    <div class="manage__main--container">
+                        <div class="main__top">
+                            <div class="main__addworker">Dodaj pracownika</div>
+                            <div class="main__removeworker">Usuń pracownika</div>
+                        </div>
+                        <div class="main__mid">
+                            <div class="main__manageworker">Zarządzaj pracownikami</div>
+                        </div>
+                        <div class="main__bottom bottom">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="clientlist">
+            <div class="clientlist--container">
+                <div class="clientlist--border">
+                    <div class="clientlist__title">
+                        <p>
+                            B<br>a<br>z<br>a<br><br> k<br>l<br>i<br>e<br>n<br>t<br>ó<br>w
+                        </p>
+                    </div>
+                    <div class="clientlist__right">
+                        <div class="clientlist__label">
+                            <label for="ice-cream-choice">
+                                <p>Wyszukiwarka: </p><input type="text" />
+                                <i class="fas fa-user-plus addnewclient"></i>
+                            </label>
+                        </div>
+                        <nav class="clientlist__main">
+                            <div class="clientlist__loader hidden">
+                                <i class="fas fa-spinner"></i>
+                            </div>
+                            <ul>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="modal__background hidden">
+        <div class="modal__loader hidden">
+            <i class="fas fa-spinner"></i>
+        </div>
+        <div class="modal__main"></div>
+        <div class="modal__visit"></div>
+        <div class="modal__client hidden">
+            <div class="modal__client--container">
+                <label>
+                    <p>Imie</p><input type="text" class="clientname">
+                </label>
+                <label>
+                    <p>Numer telefonu</p><input type="text" class="clientcontact">
+                </label>
+                <p class="modalclientinfo"></p>
+                <input class="sendclientinfo" type="submit" value="Edytuj dane">
+                <div class="exit">
+                    <i class="fas fa-times modal__exit"></i>
+                </div>
+            </div>
+        </div>
+        <div class="modal__change hidden">
+            <div class="modal__change--container">
+                <p>Zmiana od: <select class="from">
+                        <option value="06:00">06:00</option>
+                        <option value="06:15">06:15</option>
+                        <option value="06:30">06:30</option>
+                        <option value="06:45">06:45</option>
+                        <option value="07:00" selected>07:00</option>
+                        <option value="07:15">07:15</option>
+                        <option value="07:30">07:30</option>
+                        <option value="07:45">07:45</option>
+                        <option value="08:00">08:00</option>
+                        <option value="08:15">08:15</option>
+                        <option value="08:30">08:30</option>
+                        <option value="08:45">08:45</option>
+                        <option value="09:00">09:00</option>
+                        <option value="09:15">09:15</option>
+                        <option value="09:30">09:30</option>
+                        <option value="09:45">09:45</option>
+                        <option value="10:00">10:00</option>
+                        <option value="10:15">10:15</option>
+                        <option value="10:30">10:30</option>
+                        <option value="10:45">10:45</option>
+                        <option value="11:00">11:00</option>
+                        <option value="11:15">11:15</option>
+                        <option value="11:30">11:30</option>
+                        <option value="11:45">11:45</option>
+                        <option value="12:00">12:00</option>
+                        <option value="12:15">12:15</option>
+                        <option value="12:30">12:30</option>
+                        <option value="12:45">12:45</option>
+                        <option value="13:00">13:00</option>
+                        <option value="13:15">13:15</option>
+                        <option value="13:30">13:30</option>
+                        <option value="13:45">13:45</option>
+                        <option value="14:00">14:00</option>
+                        <option value="14:15">14:15</option>
+                        <option value="14:30">14:30</option>
+                        <option value="14:45">14:45</option>
+                        <option value="15:00">15:00</option>
+                        <option value="15:15">15:15</option>
+                        <option value="15:30">15:30</option>
+                        <option value="15:45">15:45</option>
+                        <option value="16:00">16:00</option>
+                        <option value="16:15">16:15</option>
+                        <option value="16:30">16:30</option>
+                        <option value="16:45">16:45</option>
+                        <option value="17:00">17:00</option>
+                        <option value="17:15">17:15</option>
+                        <option value="17:30">17:30</option>
+                        <option value="17:45">17:45</option>
+                        <option value="18:00">18:00</option>
+                    </select>
+                    do: <select class="to" name="" id="">
+                        <option value="06:00">06:00</option>
+                        <option value="06:15">06:15</option>
+                        <option value="06:30">06:30</option>
+                        <option value="06:45">06:45</option>
+                        <option value="07:00">07:00</option>
+                        <option value="07:15">07:15</option>
+                        <option value="07:30">07:30</option>
+                        <option value="07:45">07:45</option>
+                        <option value="08:00">08:00</option>
+                        <option value="08:15">08:15</option>
+                        <option value="08:30">08:30</option>
+                        <option value="08:45">08:45</option>
+                        <option value="09:00">09:00</option>
+                        <option value="09:15">09:15</option>
+                        <option value="09:30">09:30</option>
+                        <option value="09:45">09:45</option>
+                        <option value="10:00">10:00</option>
+                        <option value="10:15">10:15</option>
+                        <option value="10:30">10:30</option>
+                        <option value="10:45">10:45</option>
+                        <option value="11:00">11:00</option>
+                        <option value="11:15">11:15</option>
+                        <option value="11:30">11:30</option>
+                        <option value="11:45">11:45</option>
+                        <option value="12:00">12:00</option>
+                        <option value="12:15">12:15</option>
+                        <option value="12:30">12:30</option>
+                        <option value="12:45">12:45</option>
+                        <option value="13:00">13:00</option>
+                        <option value="13:15">13:15</option>
+                        <option value="13:30">13:30</option>
+                        <option value="13:45">13:45</option>
+                        <option value="14:00">14:00</option>
+                        <option value="14:15">14:15</option>
+                        <option value="14:30">14:30</option>
+                        <option value="14:45">14:45</option>
+                        <option value="15:00">15:00</option>
+                        <option value="15:15">15:15</option>
+                        <option value="15:30">15:30</option>
+                        <option value="15:45">15:45</option>
+                        <option value="16:00">16:00</option>
+                        <option value="16:15">16:15</option>
+                        <option value="16:30">16:30</option>
+                        <option value="16:45">16:45</option>
+                        <option value="17:00" selected>17:00</option>
+                        <option value="17:15">17:15</option>
+                        <option value="17:30">17:30</option>
+                        <option value="17:45">17:45</option>
+                        <option value="18:00">18:00</option>
+                    </select>
+                    <button class="showaccept">Dodaj zmiane</button>
+                </p>
+                <p class="modalchangeinfo"></p>
+                <div class="exit">
+                    <i class="fas fa-times modal__exit"></i>
+                </div>
+                <div class="modal__change--break">
+                    <p>Dodaj przerwe w trakcie zmiany <i class="fas fa-plus"></i></p>
+                </div>
+            </div>
+        </div>
+        <div class="modal__acceptforclientlist hidden">
+            <div class="modal__acceptforclientlist--container">
+                <p>Czy na pewno chcesz dodać klienta do bazy danych?</p>
+                <div><span class="modalyesclientlist">Tak</span><span class="modalno">Nie</span></div>
+            </div>
+        </div>
+        <div class="modal__acceptforvisit hidden">
+            <div class="modal__acceptforvisit--container">
+                <p>Czy na pewno chcesz dodać klienta do bazy danych?</p>
+                <div><span class="modalyesvisit">Tak</span><span class="modalno">Nie</span></div>
+            </div>
+        </div>
+        <div class="modal__info hidden">
+            <div class="modal__info--container">
+                <p>Dodałeś klienta do bazy danych</p>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascript/manage.js" type="module"></script>
+</body>
+
+</html>

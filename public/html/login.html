@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/login.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="login">
+            <div class="login--container">
+                <p class="title">Panel logowania</p>
+                <label>
+                    <p>Username:</p>
+                    <input class="name" type="text">
+                </label>
+                <label>
+                    <p>Password:</p>
+                    <input class="password" type="password">
+                </label>
+                <p class="info none">Nieprawidłowa nazwa użytkownika lub hasło.</p>
+                <input class="send" type="submit" value="Zaloguj">
+            </div>
+        </section>
+        <div class="modal__background hidden">
+            <div class="modal__loader hidden">
+                <i class="fas fa-spinner"></i>
+            </div>
+            <div class="modal__info hidden">
+                <div class="modal__info--container">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/javascript/login.js" type="module"></script>
+</body>
+
+</html>
